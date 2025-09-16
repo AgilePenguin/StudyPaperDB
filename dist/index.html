@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script type="module" crossorigin src="/assets/index-CQgbjEP5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-tn0RQdqM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Netlify Drop 등 정적 배포에서 런타임 설정 주입을 위한 훅
+      // 필요 시 아래 값을 배포 환경에서 직접 수정 가능
+      window.NOTION_API_KEY = window.NOTION_API_KEY || "${VITE_NOTION_API_KEY}";
+      window.NOTION_DATABASE_ID = window.NOTION_DATABASE_ID || "${VITE_NOTION_DATABASE_ID}";
+    </script>
+  </body>
+</html>
